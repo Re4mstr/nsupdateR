@@ -8,7 +8,8 @@
 #
 # VARIABLES:
 HOSTNAME="HOSTNAME"
-UPDATE_URL="UPDATE URL"
+SECRET="SECRET"
+UPDATE_URL=https://$HOSTNAME.nsupdate.info:$SECRET@ipv4.nsupdate.info/nic/update
 #
 # Check current IP:
 CURRENT_IP=$(wget https://ipv4.nsupdate.info/myip -q -O -)
